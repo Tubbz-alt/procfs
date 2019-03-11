@@ -139,9 +139,9 @@ class stat(File):
 
         return result
 
-    def __parse_list_with_total(self, list):
-        total = list.pop(0)
-        result = Dict(zip(xrange(1, len(list) + 1), list))
+    def __parse_list_with_total(self, list_):
+        total = list_.pop(0)
+        result = Dict(zip(xrange(1, len(list_) + 1), list_))
         result.total = total
         return result
 
